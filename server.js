@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 // Replace this with your own MongoDB URL
-const uri = 'mongodb://localhost:27017/ArtList';
-// const uri = "mongodb+srv://AngeloPal:300363695@cluster0.aqefx3v.mongodb.net/ArtList";
+//const uri = 'mongodb://localhost:27017/ArtList';
+const uri = "mongodb+srv://AngeloPal:300363695@cluster0.aqefx3v.mongodb.net/ArtList";
 
 mongoose.connect(uri, { useNewUrlParser: true });
 const connection = mongoose.connection;
