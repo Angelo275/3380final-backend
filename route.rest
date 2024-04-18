@@ -1,0 +1,47 @@
+
+//get all the arts
+GET http://localhost:5000/art
+
+###
+
+//get art by id
+GET http://localhost:5000/art/6621795f0d0db407dd42a432
+
+###
+
+//post art
+POST http://localhost:5000/art
+Content-Type: application/json
+
+{
+    "artName": "art name",
+    "serial": 12341245,
+    "src": "src art",
+    "alt": "alt art",
+    "bids": {
+        "user": "abc",
+        "bid": 124
+    }
+}
+
+###
+
+//change the art by id
+POST http://localhost:5000/art/6621795f0d0db407dd42a432
+Content-Type: application/json
+
+{
+    "artName": "mona lisa",
+    "serial": 2347502134,
+    "src": "asdf",
+    "alt": "alt art",
+    "bids": {
+        "user": "kim",
+        "bid": 800000000
+    }
+}
+
+###
+
+//delete the art by id
+DELETE http://localhost:5000/art/6621795f0d0db407dd42a432
